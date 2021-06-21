@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h3> Projeto 11: Regra de Três </h3>
+
+<script>
+
+ function pulaLinha(){
+
+ 	document.write("<br>");
+ }
+
+ function mostra(texto){
+
+ 	document.write(texto);
+ 	pulaLinha();
+ }
+
+
+ mostra("Esse é um projeto de um programa que calcula   <br> Regra de Três SIMPLES a partir dos dados que você informou!");
+
+     var valorInformadoUm = prompt("Informe o Primeiro valor:");
+
+     var valorInformadoDois = prompt("Informe o Segundo valor:");
+
+     var valorInformadoTrês = prompt("Informe o valor o qual você deseja descobrir o X: ");
+
+
+         function regra(valorInformadoDois, valorInformadoTrês, valorInformadoUm) {
+
+         return valorInformadoDois * valorInformadoTrês / valorInformadoUm
+
+         }
+
+     var regraCalculada = regra(valorInformadoDois, valorInformadoTrês, valorInformadoUm);
+
+
+ pulaLinha();
+
+ mostra("De acordo com seus dados informados... <br>")
+
+ mostra("Sua resposta é: X= " + regraCalculada );
+
+</script>
